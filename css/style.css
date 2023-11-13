@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'RobotoBold';
-    src: url('./assets/Fonts/Roboto-Regular.ttf');
+    src: url('../assets/Fonts/Roboto-Regular.ttf');
     font-weight: 500;
     font-style:normal ;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('./assets/Fonts/Roboto-Light.ttf');
+    src: url('../assets/Fonts/Roboto-Light.ttf');
     font-weight: 300;
     font-style: normal;
 }
@@ -22,9 +22,11 @@ html, body {
     background-color: azure;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    line-height: 22px;
 }
 
 h1 {
+    padding-top: 10px;
     font-size: 28px;
     font-family: 'RobotoBold', sans-serif;
     letter-spacing: 2.4px;
@@ -33,15 +35,16 @@ h1 {
 
 h2, h3 {
     font-family: 'RobotoBold', sans-serif;
-    padding-bottom: 24px;
 }
 
 h2 {
     font-size: 22px;
+    padding-bottom: 24px;
 }
 
 h3 {
     margin-top: 0;
+    padding-bottom: 16px;
     font-size: 16px;
 }
 
@@ -89,6 +92,10 @@ p {
     font-size: 16px;
     text-align: justify;
     padding-bottom: 16px;
+}
+
+.cv-element:last-child p, #about-text:last-child p, .cv-element:first-child p {
+    padding-bottom: 4px;
 }
 
 #about-img {
@@ -150,6 +157,15 @@ a[name='skills'] + h2 + ul {
     padding-left: 5%;
 }
 
+#skills-list {
+    list-style-type: square;
+    margin-left: 30px;
+}
+
+#contacts-list a {
+    margin-left: 10px;
+}
+
 a[name='skills'] + h2 + ul li {
     list-style-image: url(./assets/sad.svg);
 }
@@ -190,26 +206,27 @@ code {
 #projects-wrapper {
     display: flex;
     gap: 4%;
-
-}
-
-#footer-left-hand-wrapper {
-    display: flex;
-    gap: 32px;
-}
-
-#rsschool-course-link {
-    width: 90px;
-    height: 32px;
-    background-repeat: no-repeat;
-    background-image: url(./assets/rs_school_js.svg);
-    cursor: pointer;
 }
 
 .project {
     width: 100%;
     height: auto;
 }
+
+#footer-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rsschool-course-link {
+    width: 90px;
+    height: 32px;
+    cursor: pointer;
+}
+
 
 .blue-code {
     color: rgb(108, 172, 246);
