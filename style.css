@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('./assets/Fonts/Roboto-Regular.ttf');
+    font-weight: 500;
+    font-style:normal ;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/Fonts/Roboto-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+html, body {
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'RobotoBold', sans-serif;
+    letter-spacing: 2.4px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'RobotoBold', sans-serif;
+    padding-bottom: 24px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+header, footer {
+    display: flex;
+    align-items:center;
+    background-color: lightslategray;
+
+}
+
+header {
+    justify-content: center;
+    padding: 16px;
+}
+
+footer {
+    justify-content: space-between;
+    padding: 8px 16px;
+    color: white;
+}
+
+
+img {
+    width: 100%;
+}
+
+li {
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+nav li {    
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 16px;        
+    color: white;
+}
+
+nav li:first-child {    
+    margin-left: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 16px;
+}
+
+#about-img {
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin: 0 3% 1% 0;
+    border-radius: 50%;
+}
+
+#cv-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color:darkkhaki;
+}
+
+#main-wrapper {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.cv-element {
+    width: 45%;
+    height: auto;
+    padding: 8px;
+    margin: 8px;    
+    border-bottom: 3px solid rgb(144, 141, 89);
+}
+
+#combo {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#combo div{    
+    flex-basis: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#combo div:last-child {
+    padding-top: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+a[name='contacts'] + h2 + ul li a {
+    padding-left: 5px;
+    font-size: 13px;
+    color: rgb(251, 232, 208);
+}
+
+a[name='skills'] + h2 + ul {
+    padding-left: 5%;
+}
+
+a[name='skills'] + h2 + ul li {
+    list-style-image: url(./assets/sad.svg);
+}
+
+a[name='skills'] + h2 + ul li:first-child {
+    list-style-image: url(./assets/happy.svg);
+}
+
+#snippet {
+    flex-basis: 100%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#snippet p {
+    padding-bottom: 0;
+}
+
+pre {
+    margin: 15px 0;
+    color: white;
+    background-color: rgba(33, 33, 33, 0.887);
+    border-radius: 10px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;  
+}
+
+#projects {
+    flex-basis: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#projects-wrapper {
+    display: flex;
+    gap: 4%;
+
+}
+
+#footer-left-hand-wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+#rsschool-course-link {
+    width: 90px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/rs_school_js.svg);
+    cursor: pointer;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+}
+
+.blue-code {
+    color: rgb(108, 172, 246);
+}
+
+.pink-code {
+    color: rgb(218,110,204);
+}
+
+.brown-code {
+    color: rgb(202,127,90);
+}
+
+.yellow-code {
+    color: yellow;
+}
